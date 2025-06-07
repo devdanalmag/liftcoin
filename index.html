@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$LIFT - Rise Together | Solana Meme Coin</title>
-    <link rel="icon" href="images/favicon.jpg" type="image/jpg">
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Kanit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Kanit:wght@400;600;800&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --purple: #9d4edd;
@@ -43,9 +45,17 @@
         }
 
         @keyframes gradientMorph {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         /* **3D Floating $LIFT Coin (Follows Cursor - Desktop Only)** */
@@ -61,7 +71,8 @@
             transform: translate(-50%, -50%);
             transition: transform 0.1s ease-out;
             mix-blend-mode: screen;
-            display: none; /* Hidden on mobile */
+            display: none;
+            /* Hidden on mobile */
         }
 
         /* **Glitch Text Effect** */
@@ -73,10 +84,23 @@
         }
 
         @keyframes glitch {
-            0%, 100% { text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff; }
-            25% { text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff; }
-            50% { text-shadow: 2px -2px 0 #ff00ff, -2px 2px 0 #00ffff; }
-            75% { text-shadow: -2px -2px 0 #ff00ff, 2px 2px 0 #00ffff; }
+
+            0%,
+            100% {
+                text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+            }
+
+            25% {
+                text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff;
+            }
+
+            50% {
+                text-shadow: 2px -2px 0 #ff00ff, -2px 2px 0 #00ffff;
+            }
+
+            75% {
+                text-shadow: -2px -2px 0 #ff00ff, 2px 2px 0 #00ffff;
+            }
         }
 
         /* **Holographic Text** */
@@ -90,9 +114,17 @@
         }
 
         @keyframes holographic {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         /* **Container for Content** */
@@ -128,6 +160,22 @@
             background-clip: text;
             color: transparent;
             text-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-image {
+            height: 5.8rem;
+            /* Match your text size */
+            width: auto;
+            filter: drop-shadow(0 0 5px rgba(157, 78, 221, 0.7));
+            transition: all 0.3s ease;
+        }
+
+        .logo-image:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 10px rgba(157, 78, 221, 0.9));
         }
 
         .nav-toggle {
@@ -223,9 +271,19 @@
         }
 
         @keyframes floatParticle {
-            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
-            50% { opacity: 0.7; }
-            100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(720deg);
+                opacity: 0;
+            }
         }
 
         /* **Contract Address (Copy with Confetti)** */
@@ -300,8 +358,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { box-shadow: 0 0 5px rgba(157, 78, 221, 0.3); }
-            50% { box-shadow: 0 0 20px rgba(157, 78, 221, 0.7); }
+
+            0%,
+            100% {
+                box-shadow: 0 0 5px rgba(157, 78, 221, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(157, 78, 221, 0.7);
+            }
         }
 
         /* **Social Media Links** */
@@ -396,9 +461,17 @@
         }
 
         @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0); }
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
         }
 
         /* **Tokenomics Section** */
@@ -656,7 +729,8 @@
             }
 
             .floating-coin {
-                display: none; /* Disable on mobile */
+                display: none;
+                /* Disable on mobile */
             }
         }
 
@@ -679,8 +753,85 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* **FAQ Section** */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid rgba(157, 78, 221, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--neon-purple);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: rgba(157, 78, 221, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(157, 78, 221, 0.1);
+        }
+
+        .faq-question h3 {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+            background: rgba(15, 10, 26, 0.7);
+        }
+
+        .faq-answer p {
+            padding: 1.5rem 0;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .faq-answer a {
+            color: var(--neon-purple);
+            text-decoration: none;
+        }
+
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-item.active .faq-question {
+            background: rgba(157, 78, 221, 0.1);
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
     </style>
 </head>
+
 <body>
     <!-- **Gradient Morphing Background** -->
     <div class="bg-morph"></div>
@@ -694,7 +845,10 @@
     <!-- **Header** -->
     <header>
         <div class="container header-container">
-            <div class="logo">$LIFT</div>
+            <div class="logo">
+                <img src="images/favicon.png" alt="$LIFT Logo" class="logo-image">
+                <span>$LIFT</span>
+            </div>
             <button class="nav-toggle" id="navToggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -704,6 +858,7 @@
                 <li><a href="#tokenomics">Tokenomics</a></li>
                 <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#community">Community</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </div>
     </header>
@@ -713,8 +868,9 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="glitch-text">WE RISE <span class="holographic">TOGETHER</span></h1>
-                <p>$LIFT – The Meme for the Tired, the Broken, the Hopeful. Born from struggle, $LIFT isn't just another coin.</p>
-                
+                <p>$LIFT – The Meme for the Tired, the Broken, the Hopeful. Born from struggle, $LIFT isn't just another
+                    coin.</p>
+
                 <div class="contract-box" id="contractBox">
                     <span class="contract-address">znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump</span>
                     <button class="copy-btn" id="copyBtn">
@@ -722,7 +878,8 @@
                     </button>
                 </div>
 
-                <a href="https://jup.ag/swap/SOL-LIFT_znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump" class="buy-button" target="_blank">
+                <a href="https://jup.ag/swap/SOL-LIFT_znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump" class="buy-button"
+                    target="_blank">
                     <div class="solana-network">
                         <i class="fas fa-bolt"></i>
                         <span>BUY ON SOLANA</span>
@@ -739,7 +896,8 @@
                     <a href="https://discord.gg/lifttribe" class="social-link" target="_blank">
                         <i class="fab fa-discord"></i>
                     </a>
-                    <a href="https://ave.ai/token/znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump-solana?from=Home" class="social-link" target="_blank">
+                    <a href="https://ave.ai/token/znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump-solana?from=Home"
+                        class="social-link" target="_blank">
                         <i class="fas fa-chart-line"></i>
                     </a>
                 </div>
@@ -756,9 +914,14 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>A meme coin with a real heartbeat</h3>
-                    <p>$LIFT is more than just another meme coin on Solana. It's a community for the broken, the healing, and the hopeful. We believe in rising together, supporting each other through the ups and downs of life and crypto.</p>
-                    <p>No pre-sale. No pump and dump. Just real vibes, healing, and unity. Our mission is to create a space where people can find hope, encouragement, and maybe even financial freedom along the way.</p>
-                    <p>Every $LIFT token represents a story - your story. Whether you're recovering from losses, healing from life's challenges, or just looking for a community that cares, you belong here.</p>
+                    <p>$LIFT is more than just another meme coin on Solana. It's a community for the broken, the
+                        healing, and the hopeful. We believe in rising together, supporting each other through the ups
+                        and downs of life and crypto.</p>
+                    <p>No pre-sale. No pump and dump. Just real vibes, healing, and unity. Our mission is to create a
+                        space where people can find hope, encouragement, and maybe even financial freedom along the way.
+                    </p>
+                    <p>Every $LIFT token represents a story - your story. Whether you're recovering from losses, healing
+                        from life's challenges, or just looking for a community that cares, you belong here.</p>
                 </div>
                 <div class="about-image">
                     <img src="images/LIFT.jpg" alt="Community rising together">
@@ -807,37 +970,23 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-date">Q1 2023</div>
+                        <div class="timeline-date">Phase 1</div>
                         <h3 class="timeline-title">Birth of $LIFT</h3>
-                        <p>Concept creation and community building. Fair launch on Solana with no presale.</p>
+                        <p>Token deployed on Pump.fun Telegram & Twitter created First memes and spaces launched.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-date">Q2 2023</div>
-                        <h3 class="timeline-title">Building Foundations</h3>
-                        <p>First major exchange listings. Community growth initiatives and partnerships.</p>
+                        <div class="timeline-date">Phase 2</div>
+                        <h3 class="timeline-title">Awareness</h3>
+                        <p>Community meme contests Space hosting and AMA Collaborations with Web3 influencers.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <div class="timeline-date">Q3 2023</div>
-                        <h3 class="timeline-title">Healing Together</h3>
-                        <p>Mental health awareness campaigns. Community support programs.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Q4 2023</div>
-                        <h3 class="timeline-title">Rising Higher</h3>
-                        <p>Major exchange listings. Merchandise store launch. Charity initiatives.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2024</div>
-                        <h3 class="timeline-title">The Future</h3>
-                        <p>Expansion into real-world applications. Continued community growth and support.</p>
+                        <div class="timeline-date">Phase 3</div>
+                        <h3 class="timeline-title">Utility</h3>
+                        <p>Donation tracking system, Voting system for causes, Website v2 + NFT merch.</p>
                     </div>
                 </div>
             </div>
@@ -850,8 +999,9 @@
             <div class="section-title">
                 <h2>Join Our Community</h2>
             </div>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">We're building more than just a token - we're building a movement. Join thousands of others who believe in rising together.</p>
-            
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">We're building more than just a token
+                - we're building a movement. Join thousands of others who believe in rising together.</p>
+
             <div class="community-stats">
                 <div class="stat-item">
                     <div class="stat-number">-</div>
@@ -869,6 +1019,78 @@
         </div>
     </section>
 
+    <!-- **FAQ Section** -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is $LIFT a charity token?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>$LIFT is a meme coin with meaning. While not officially a charity token, we support real
+                            causes through community-driven campaigns and initiatives that align with our mission of
+                            lifting people up.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Where can I buy $LIFT?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can buy $LIFT on decentralized exchanges on the Solana network. The easiest way is
+                            through <a href="https://jup.ag/swap/SOL-LIFT_znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump"
+                                target="_blank">Jupiter</a> or directly on Raydium. Make sure you're using the correct
+                            contract address: znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Who created $LIFT?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>$LIFT was created by a community of believers who wanted to use memes as a force for good -
+                            to lift others up starting with our own community members. There is no single founder, as we
+                            believe in collective growth.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What makes $LIFT different?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Unlike many meme coins, $LIFT has a genuine community focus. We emphasize mental health
+                            awareness, mutual support, and collective growth. Our tokenomics are designed to be fair and
+                            sustainable rather than pump-and-dump.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I get involved?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Join our <a href="https://t.me/shbsbbkoz" target="_blank">Telegram</a>, follow us on <a
+                                href="https://x.com/lifttribe" target="_blank">Twitter</a>, and participate in community
+                            discussions. We welcome everyone who shares our vision of rising together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- **Footer** -->
     <footer>
         <div class="container">
@@ -877,13 +1099,16 @@
                     <h3>$LIFT</h3>
                     <p>The meme coin for the broken, the healing, the hopeful. We rise together.</p>
                     <div class="social-links" style="justify-content: flex-start; margin-top: 1rem;">
-                        <a href="https://x.com/lifttribe" class="social-link" style="width: 40px; height: 40px; font-size: 1rem;" target="_blank">
+                        <a href="https://x.com/lifttribe" class="social-link"
+                            style="width: 40px; height: 40px; font-size: 1rem;" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://t.me/shbsbbkoz" class="social-link" style="width: 40px; height: 40px; font-size: 1rem;" target="_blank">
+                        <a href="https://t.me/shbsbbkoz" class="social-link"
+                            style="width: 40px; height: 40px; font-size: 1rem;" target="_blank">
                             <i class="fab fa-telegram"></i>
                         </a>
-                        <a href="https://discord.gg/lift" class="social-link" style="width: 40px; height: 40px; font-size: 1rem;" target="_blank">
+                        <a href="https://discord.gg/lift" class="social-link"
+                            style="width: 40px; height: 40px; font-size: 1rem;" target="_blank">
                             <i class="fab fa-discord"></i>
                         </a>
                     </div>
@@ -896,15 +1121,18 @@
                         <li><a href="#tokenomics">Tokenomics</a></li>
                         <li><a href="#roadmap">Roadmap</a></li>
                         <li><a href="#community">Community</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="https://jup.ag/swap/SOL-LIFT_znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump" target="_blank">Buy $LIFT</a></li>
-                        <li><a href="https://ave.ai/token/znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump-solana?from=Home" target="_blank">Chart</a></li>
+                        <li><a href="https://jup.ag/swap/SOL-LIFT_znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump"
+                                target="_blank">Buy $LIFT</a></li>
+                        <li><a href="https://ave.ai/token/znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump-solana?from=Home"
+                                target="_blank">Chart</a></li>
                         <li><a href="#" target="_blank">Whitepaper</a></li>
-                        <li><a href="#" target="_blank">FAQ</a></li>
+<li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -932,7 +1160,7 @@
 
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            navToggle.innerHTML = navLinks.classList.contains('active') ? 
+            navToggle.innerHTML = navLinks.classList.contains('active') ?
                 '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
 
@@ -971,7 +1199,7 @@
         const copyBtn = document.getElementById('copyBtn');
         copyBtn.addEventListener('click', () => {
             navigator.clipboard.writeText('znxMmkt6jVrHHD1nuXBQr5bYbUTQM2gThENmEm9pump');
-            
+
             // Confetti Explosion
             confetti({
                 particleCount: 100,
@@ -991,10 +1219,10 @@
         const timelineItems = document.querySelectorAll('.timeline-item');
         function checkTimeline() {
             const triggerBottom = window.innerHeight / 5 * 4;
-            
+
             timelineItems.forEach(item => {
                 const itemTop = item.getBoundingClientRect().top;
-                
+
                 if (itemTop < triggerBottom) {
                     item.classList.add('visible');
                 }
@@ -1006,12 +1234,12 @@
 
         // **Smooth Scrolling for Anchor Links**
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-                
+
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     window.scrollTo({
@@ -1021,6 +1249,22 @@
                 }
             });
         });
+
+        // **FAQ Accordion Functionality**
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+
+                // Close other open FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem && item.classList.contains('active')) {
+                        item.classList.remove('active');
+                    }
+                });
+            });
+        });
     </script>
 </body>
+
 </html>
